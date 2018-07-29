@@ -4,4 +4,5 @@
 .idea/studiogdw.github.io.iml
 .idea/modules.xml
 _site/
+.sass-cache/
 *.scssc
