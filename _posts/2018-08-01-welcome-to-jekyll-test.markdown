@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "서울문화네트워크"
+title:  "Welcome to Jekyll22!"
 date:   2018-07-29 17:34:38 +0900
 categories: jekyll update
 client: "서울문화네트워크"
