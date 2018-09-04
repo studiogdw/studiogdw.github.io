@@ -94,10 +94,9 @@
             <div class="container" style="overflow:scroll">
                 {% for post in posts %}
                 {% assign is_index = true %}
-                <div>{{ post.title}}</div>
                 <div class="item" name="grid_img" style="width: 100%">
                     <a href="#">
-                        <img src="https://picsum.photos/640/480/?random&test=0" style="width: 100%; height: 600px;"
+                        <img src="{{ post.photo }}" style="width: 100%; height: 600px;"
                              data-project="{{ post.title }}"
                              data-client="{{ post.client }}"
                              data-work="{{ post.work }}"
@@ -106,62 +105,62 @@
                     </a>
                 </div>
                 {% endfor %}
-                <div class="item" name="grid_img" style="width: 100%">
-                    <a href="#">
-                        <img src="https://picsum.photos/640/480/?random&test=0" style="width: 100%; height: 600px;"
-                             data-project="project1"
-                             data-client="서울시청"
-                             data-work="기획/디자인/인테리어/개발"
-                              data-year="2017"
-                             onmouseover="test(this, event)"/>
-                    </a>
-                </div>
-                <div class="item" name="grid_img" style="width: 50%">
-                    <a href="#">
-                        <img src="https://picsum.photos/480/640/?random&test=1" style="width: 100%; height: 400px;"
-                             data-project="project2"
-                             data-client="동대문구청"
-                             data-work="기획/디자인"
-                             data-year="2016"
-                             onmouseover="test(this, event)"/>
-                    </a>
-                </div>
-                <div class="item" name="grid_img" style="width: 50%">
-                    <a href="#">
-                        <img src="https://picsum.photos/480/640/?random&test=2" style="width: 100%; height: 400px;"
-                             data-project="project3"
-                             data-client="그대와스튜디오"
-                             data-work="기획/디자인/개발"
-                             data-year="2018"
-                             onmouseover="test(this, event)"/>
-                    </a>
-                </div>
-                <div class="item" name="grid_img" style="width: 100%">
-                    <a href="#">
-                        <img src="https://picsum.photos/640/480/?random&test=3" style="width: 100%; height: 400px;"
-                             onmouseover="test(this, event)"/>
-                    </a>
-                </div>
-                <div class="item" name="grid_img" style="width: 50%">
-                    <a href="#">
-                        <img src="https://picsum.photos/480/640/?random&test=4" style="width: 100%; "/>
-                    </a>
-                </div>
-                <div class="item" name="grid_img" style="width: 50%">
-                    <a href="#">
-                        <img src="https://picsum.photos/640/480/?random&test=5" style="width: 100%; "/>
-                    </a>
-                </div>
-                <div class="item" name="grid_img" style="width: 50%">
-                    <a href="#">
-                        <img src="https://picsum.photos/480/640/?random&test=6" style="width: 100%; "/>
-                    </a>
-                </div>
-                <div class="item" name="grid_img" style="width: 50%">
-                    <a href="#">
-                        <img src="https://picsum.photos/480/640/?random&test=7" style="width: 100%; "/>
-                    </a>
-                </div>
+                <!--<div class="item" name="grid_img" style="width: 100%">-->
+                    <!--<a href="#">-->
+                        <!--<img src="https://picsum.photos/640/480/?random&test=0" style="width: 100%; height: 600px;"-->
+                             <!--data-project="project1"-->
+                             <!--data-client="서울시청"-->
+                             <!--data-work="기획/디자인/인테리어/개발"-->
+                              <!--data-year="2017"-->
+                             <!--onmouseover="test(this, event)"/>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="item" name="grid_img" style="width: 50%">-->
+                    <!--<a href="#">-->
+                        <!--<img src="https://picsum.photos/480/640/?random&test=1" style="width: 100%; height: 400px;"-->
+                             <!--data-project="project2"-->
+                             <!--data-client="동대문구청"-->
+                             <!--data-work="기획/디자인"-->
+                             <!--data-year="2016"-->
+                             <!--onmouseover="test(this, event)"/>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="item" name="grid_img" style="width: 50%">-->
+                    <!--<a href="#">-->
+                        <!--<img src="https://picsum.photos/480/640/?random&test=2" style="width: 100%; height: 400px;"-->
+                             <!--data-project="project3"-->
+                             <!--data-client="그대와스튜디오"-->
+                             <!--data-work="기획/디자인/개발"-->
+                             <!--data-year="2018"-->
+                             <!--onmouseover="test(this, event)"/>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="item" name="grid_img" style="width: 100%">-->
+                    <!--<a href="#">-->
+                        <!--<img src="https://picsum.photos/640/480/?random&test=3" style="width: 100%; height: 400px;"-->
+                             <!--onmouseover="test(this, event)"/>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="item" name="grid_img" style="width: 50%">-->
+                    <!--<a href="#">-->
+                        <!--<img src="https://picsum.photos/480/640/?random&test=4" style="width: 100%; "/>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="item" name="grid_img" style="width: 50%">-->
+                    <!--<a href="#">-->
+                        <!--<img src="https://picsum.photos/640/480/?random&test=5" style="width: 100%; "/>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="item" name="grid_img" style="width: 50%">-->
+                    <!--<a href="#">-->
+                        <!--<img src="https://picsum.photos/480/640/?random&test=6" style="width: 100%; "/>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="item" name="grid_img" style="width: 50%">-->
+                    <!--<a href="#">-->
+                        <!--<img src="https://picsum.photos/480/640/?random&test=7" style="width: 100%; "/>-->
+                    <!--</a>-->
+                <!--</div>-->
             </div>
             <!--closing container div-->
         </div>
