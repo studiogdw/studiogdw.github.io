@@ -33,6 +33,8 @@
 
 .content-text {
   margin: 173px 0px 0px 34px;
+  position: absolute;
+  top: 0px;
 }
 
 .fl {
